@@ -1,11 +1,5 @@
 const { watch } = require("fs");
 const path = require("path");
-const postCSSPlugins = [
-  require("postcss-import"),
-    require("postcss-simple-vars"),
-    require("postcss-nested"),
-    require("autoprefixer")
-]
 module.exports = {
     mode: 'development',
     entry: "./app/assets/scripts/App.js",
@@ -14,7 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, "app")
     },
     watch: true,
-    module: {
+       module: {
         rules: [
           {
             test: /\.css$/i,
@@ -26,9 +20,11 @@ module.exports = {
                 options: {
                   postcssOptions: {
                     plugins: [
-                      
-                        postCSSPlugins
-                                              
+                      require("postcss-import"),
+                      require("postcss-simple-vars"),
+                      require("postcss-nested"),
+                      require("autoprefixer"),
+                      require("postcss-mixins"),                       
                     ],
                   },
                 },
