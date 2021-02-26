@@ -1,0 +1,30 @@
+.row {
+  @mixin clearfix;
+  &--gutters > div {
+    padding-right: 65px;
+  }
+  &--gutters {
+    margin-right: -65px;
+  }
+  &__b-margin-until-meduim {
+    margin-bottom: 1rem;
+  }
+  @mixin atMeduim {
+    &__b-margin-until-meduim {
+      margin-bottom: 0;
+    &__meduim-4 {
+      float: left;
+      width: 33.33%;
+    }
+  }
+  &__meduim-4--lager {
+    width: 37%;
+  }
+  &__meduim-8 {
+    float: left;
+    width: 66.66%;
+  }
+  &__meduim-4--smaller {
+    width: 63%;
+  }
+}
