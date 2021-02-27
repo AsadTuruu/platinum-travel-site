@@ -25,30 +25,31 @@
       float: left;
       width: 33.33%;
     }
-  }
-  &__meduim-4--lager {
-    width: 37%;
-  }
-  &__meduim-4 {
-    float: left;
-    width: 66.66%;
-  }
-  &__meduim-4--smaller {
-    width: 63%;
-  }
 
-  &__meduim-4--lager {
-    width: 37%;
-  }
-  &__meduim-6 {
-    float: left;
-    width: 50%;
-  }
-  &__meduim-8 {
-    float: left;
-    width: 66.66%;
-  }
-  &__meduim-4--smaller {
-    width: 63%;
+    &__meduim-4--lager {
+      width: 37%;
+    }
+    &__meduim-4 {
+      float: left;
+      width: 66.66%;
+    }
+    &__meduim-4--smaller {
+      width: 63%;
+    }
+
+    &__meduim-4--lager {
+      width: 37%;
+    }
+    &__meduim-6 {
+      float: left;
+      width: 50%;
+    }
+    &__meduim-8 {
+      float: left;
+      width: 66.66%;
+    }
+    &__meduim-4--smaller {
+      width: 63%;
+    }
   }
 }
