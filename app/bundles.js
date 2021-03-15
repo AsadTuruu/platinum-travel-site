@@ -16,7 +16,7 @@
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.css */ \"./app/assets/styles/styles.css\");\n/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/MobileMenu */ \"./app/assets/scripts/modules/MobileMenu.js\");\n/* harmony import */ var _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/RevealOnScroll */ \"./app/assets/scripts/modules/RevealOnScroll.js\");\n/* harmony import */ var _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/StickyHeader */ \"./app/assets/scripts/modules/StickyHeader.js\");\n/* module decorator */ module = __webpack_require__.hmd(module);\n\n\n\n\nlet stickyHeader = new _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_3__.default();\nnew _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_2__.default(document.querySelectorAll(\".feature-item\"),75);\nnew _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_2__.default(document.querySelectorAll(\".testimonial\"), 50);\nlet mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__.default();\n\n\nif (mudules.hot) {\n    module.hot.accept();\n}\n\n//# sourceURL=webpack://platinum-travel-site-files/./app/assets/scripts/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/styles.css */ \"./app/assets/styles/styles.css\");\n/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/MobileMenu */ \"./app/assets/scripts/modules/MobileMenu.js\");\n/* harmony import */ var _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/RevealOnScroll */ \"./app/assets/scripts/modules/RevealOnScroll.js\");\n/* harmony import */ var _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/StickyHeader */ \"./app/assets/scripts/modules/StickyHeader.js\");\n/* module decorator */ module = __webpack_require__.hmd(module);\n\n\n\n\n\n\n\nlet stickyHeader = new _modules_StickyHeader__WEBPACK_IMPORTED_MODULE_4__.default();\nnew _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__.default(document.querySelectorAll(\".feature-item\"),75);\nnew _modules_RevealOnScroll__WEBPACK_IMPORTED_MODULE_3__.default(document.querySelectorAll(\".testimonial\"), 50);\nlet mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_2__.default();\n\nlet modal;\ndocument.querySelectorAll(\".open-modal\").forEach(el => {\n    el.addEventListener(\"click\", e => {\n        e.preventDefault();\n        if (typeof modal == \"undefined\") {\n            __webpack_require__.e(/*! import() */ \"app_assets_scripts_modules_Modal_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./modules/Modal */ \"./app/assets/scripts/modules/Modal.js\")).then(x => {\n                modal = new x.default();\n                setTimeout(() => modal.openModal(),20);\n            })\n            .catch(() =>console.log(\"Failiig duudaxad aldaa garlaa\"));\n        } else {\n            modal.openModal();\n        }\n    });\n});\nif (mudules.hot) {\n    module.hot.accept();\n}\n\n//# sourceURL=webpack://platinum-travel-site-files/./app/assets/scripts/App.js?");
 
 /***/ }),
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"html {\\n  scroll-behavior: smooth;\\n}\\nbody {\\n  font-family: \\\"Roboto\\\", sans-serif;\\n  color: #333;\\n}\\nimg {\\n  max-width: 100%;\\n  margin: auto;\\n}\\n* {\\n  box-sizing: border-box;\\n}\\na {\\n  color: #d59541;\\n}\\n.large-hero {\\n  border-bottom: 10px solid #2f5572;\\n  position: relative;\\n}\\n.large-hero__image {\\n    display: block;\\n  }\\n.large-hero__text-content {\\n    position: absolute;\\n    top: 50%;\\n    transform: translateY(-50%);\\n    left: 0;\\n    width: 100%;\\n    text-align: center;\\n  }\\n.large-hero__title {\\n    padding-top: 60px;\\n    font-weight: 300;\\n    color: #2f5572;\\n    margin: 0;\\n    font-size: 2rem;\\n  }\\n@media (min-width: 530px) {\\n  .large-hero__title {\\n      font-size: 4.5rem\\n  }\\n  }\\n.large-hero__subtitle {\\n    font-weight: 300;\\n    color: #2f5572;\\n\\n    margin: 0;\\n    font-size: 1.1rem;\\n  }\\n@media (min-width: 530px) {\\n  }\\n.large-hero__description {\\n    color: white;\\n    font-size: 1.1rem;\\n    font-weight: 100;\\n    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);\\n    max-width: 30rem;\\n    margin: auto;\\n    margin-right: auto;\\n  }\\n@media (min-width: 530px) {\\n  .large-hero__description {\\n      font-size: 1.8rem\\n  }\\n  }\\n.btn {\\n  background-color: #2f5572;\\n  color: white;\\n  text-decoration: none;\\n  padding: 0.75rem 1.2rem;\\n  display: inline-block;\\n}\\n.btn--orange {\\n    background-color: #d59541;\\n  }\\n.btn--large {\\n    padding: 1.1rem 1.9rem;\\n  }\\n@media (min-width: 530px) {\\n  .btn--large {\\n      font-size: 1.25rem\\n  }\\n  }\\n.page-section {\\n  padding: 0.5rem 0;\\n}\\n@media (min-width: 800px) {\\n.page-section {\\n    padding: 4.5rem 0\\n}\\n  }\\n.page-section--blue {\\n    background-color: #2f5572;\\n    color: #fff;\\n  }\\n.page-section--testimonial {\\n    background-color: #e0e6ef;\\n  }\\n@media (min-width: 1010px) {\\n  .page-section--testimonial {\\n      background: url(\\\"//assets/images/testimonials-bg.jpg\\\") no-repeat top\\n        center/cover\\n  }\\n  }\\n.wrapped {\\n  overflow: hidden;\\n  padding-left: 18px;\\n  padding-right: 18px;\\n  max-width: 1236px;\\n  margin-left: auto;\\n  margin-right: auto;\\n}\\n.wrapped--medium {\\n    max-width: 976px;\\n  }\\n.wrapped--no-padding-until-meduim {\\n    padding-left: 0;\\n    padding-right: 0;\\n  }\\n@media (min-width: 800px) {\\n  .wrapped--no-padding-until-meduim {\\n      padding-left: 18px;\\n      padding-right: 18px\\n  }\\n  }\\n.wrapped--no-padding-until-large {\\n    padding-left: 0;\\n    padding-right: 0;\\n  }\\n@media (min-width: 1010px) {\\n  .wrapped--no-padding-until-large {\\n      padding-left: 18px;\\n      padding-right: 18px\\n  }\\n  }\\n.wrapped .wrapped {\\n    padding-left: 0;\\n    padding-right: 0;\\n  }\\n.wrapped--b-margin {\\n    margin-bottom: 1rem;\\n  }\\n@media (min-width: 530px) {\\n  .wrapped--b-margin {\\n      margin-bottom: 4rem\\n  }\\n  }\\n.headline {\\n  font-weight: 300;\\n  font-size: 1.7rem;\\n  color: #2f5572;\\n}\\n@media (min-width: 530px) {\\n.headline {\\n    font-size: 2.875rem\\n}\\n  }\\n.headline--center {\\n    text-align: center;\\n  }\\n.headline--orange {\\n    color: #d59541;\\n  }\\n.headline--small {\\n    font-size: 1.1rem;\\n  }\\n@media (min-width: 530px) {\\n  .headline--small {\\n      font-size: 1.875rem\\n  }\\n  }\\n.headline--narrow {\\n    max-width: 500px;\\n    margin-left: auto;\\n    margin-right: auto;\\n  }\\n.headline--light {\\n    font-weight: 100;\\n  }\\n.headline--b-margin-small {\\n    margin-bottom: 0.5em;\\n  }\\n.headline--b-margin-large {\\n    margin-bottom: 1.6em;\\n  }\\n.headline--no-t-margin {\\n    margin-top: auto;\\n  }\\n.row::after {\\n    content: \\\" \\\";\\n    clear: both;\\n    display: table;\\n  }\\n.row--t-padding {\\n    padding-top: 80px;\\n  }\\n.row--gutters {\\n    margin-right: -65px;\\n  }\\n.row--gutters > div {\\n    padding-right: 65px;\\n  }\\n.row--gutters-small {\\n    margin-right: -45px;\\n  }\\n.row--gutters-small > div {\\n    padding-right: 45px;\\n  }\\n.row--gutters-larges {\\n    margin-right: -120px;\\n  }\\n.row--gutters-larges > div {\\n    padding-right: 120px;\\n  }\\n.row__b-margin-until-meduim {\\n    margin-bottom: 1rem;\\n  }\\n@media (min-width: 800px) {\\n    .row__b-margin-until-meduim {\\n      margin-bottom: 0;\\n    }\\n    .row__meduim-4 {\\n      float: left;\\n      width: 33.33%;\\n    }\\n\\n    .row__meduim-4--lager {\\n      width: 37%;\\n    }\\n    .row__meduim-6 {\\n      float: left;\\n      width: 50%;\\n    }\\n\\n    .row__meduim-8 {\\n      float: left;\\n      width: 66.66%;\\n    }\\n    .row__meduim-8--smaller {\\n      width: 63%;\\n    }\\n  }\\n@media (min-width: 1010px) {\\n    .row__b-margin-until-large {\\n      margin-bottom: 0;\\n    }\\n    .row__large-4 {\\n      float: left;\\n      width: 33.33%;\\n    }\\n\\n    .row__large-4--lager {\\n      width: 37%;\\n    }\\n    .row__large-6 {\\n      float: left;\\n      width: 50%;\\n    }\\n\\n    .row__large-8 {\\n      float: left;\\n      width: 66.66%;\\n    }\\n    .row__large-8--smaller {\\n      width: 63%;\\n    }\\n  }\\n@media (min-width: 800px) {\\n\\n  .row--equal-height-at-meduim {\\n      display: flex\\n  }\\n  }\\n.row--equal-height-at-meduim > div {\\n      float: none;\\n      display: flex;\\n    }\\n@media (min-width: 1010px) {\\n\\n  .row--equal-height-at-large {\\n      display: flex\\n  }\\n  }\\n.row--equal-height-at-large > div {\\n      float: none;\\n      display: flex;\\n    }\\n.generic-content-container p {\\n    line-height: 1.65;\\n    margin: 0 0 1.8rem 0;\\n    font-weight: 300;\\n  }\\n@media (min-width: 530px) {\\n  .generic-content-container p {\\n      font-size: 1.1rem\\n  }\\n  }\\n.generic-content-container p a {\\n    font-weight: 700;\\n  }\\n.section-title {\\n  font-size: 2rem;\\n  font-weight: 300;\\n  text-align: center;\\n}\\n@media (min-width: 530px) {\\n.section-title {\\n    font-size: 3.5rem\\n}\\n  }\\n.section-title strong {\\n    font-weight: 500;\\n  }\\n.section-title__icon {\\n    display: block;\\n    margin-left: auto;\\n    margin-right: auto;\\n    margin-bottom: 0.6rem;\\n  }\\n@media (min-width: 530px) {\\n  .section-title__icon {\\n      position: relative;\\n      top: 10px;\\n      margin-right: 1.5rem;\\n      margin-left: 0;\\n      margin-bottom: 0;\\n      display: inline-block\\n  }\\n  }\\n.section-title--blue {\\n    color: #2f5572;\\n  }\\n.feature-item {\\n  position: relative;\\n  padding-bottom: 2.5rem;\\n}\\n@media (min-width: 530px) {\\n.feature-item {\\n    padding-left: 95px\\n}\\n  }\\n.feature-item__icon {\\n    display: block;\\n    margin: auto;\\n  }\\n@media (min-width: 530px) {\\n  .feature-item__icon {\\n      position: absolute;\\n      left: 0\\n  }\\n  }\\n.feature-item__title {\\n    font-size: 1.6rem;\\n    font-weight: 300;\\n    margin-top: 0.8em;\\n    margin-bottom: 0.8rem;\\n    text-align: center;\\n  }\\n@media (min-width: 530px) {\\n  .feature-item__title {\\n      margin-top: 1em;\\n      font-size: 1.85rem;\\n      text-align: left\\n  }\\n  }\\n.testimonial {\\n  border-color: rgba(255, 255, 255, 0.8);\\n  padding: 0 1.875rem 1px 18px;\\n  margin-bottom: 90px;\\n}\\n@media (min-width: 1010px) {\\n.testimonial {\\n    margin-bottom: 0;\\n    padding: 0 1.875rem 1px 1.875rem\\n}\\n  }\\n.testimonial--last {\\n    margin-bottom: 0;\\n  }\\n.testimonial__photo {\\n    border-radius: 50%;\\n    overflow: hidden;\\n    width: 160px;\\n    height: 160px;\\n    margin: 0 auto -80px auto;\\n    position: relative;\\n    top: -80px;\\n    border: 6px solid rgba(255, 255, 255, 0.8);\\n  }\\n.testimonial__title {\\n    color: #2f5572;\\n    text-align: center;\\n    font-size: 1.5rem;\\n    font-weight: 500;\\n    margin: 0;\\n  }\\n.testimonial__subtitle {\\n    color: #d59541;\\n    text-align: center;\\n    font-weight: 400;\\n    font-size: 0.9rem;\\n    margin: 0.25rem 0 1rem 0;\\n  }\\n.site-footer {\\n  background-color: #2f5572;\\n  color: #fff;\\n  padding: 0.5rem;\\n  text-align: center;\\n}\\n.site-footer__text {\\n    display: block;\\n    margin-bottom: 1rem;\\n  }\\n@media (min-width: 800px) {\\n  .site-footer__text {\\n      display: inline;\\n      margin-bottom: 0;\\n      margin-right: 1.5rem;\\n      font-weight: 20\\n  }\\n  }\\n.site-header {\\n  padding: 10px 0;\\n  position: absolute;\\n  width: 100%;\\n  z-index: 2;\\n\\n  transition: background-color 0.3s ease-out;\\n}\\n.site-header--is-expanded {\\n    background-color: rgba(#2f5572, 0.55);\\n  }\\n@media (min-width: 800px) {\\n.site-header {\\n    position: fixed;\\n    background-color: rgba(\\\"#2f5572\\\", 0.3)\\n}\\n    .site-header--dark {\\n      background-color: rgba(23, 51, 72, 0.8);\\n    }\\n  }\\n@media (min-width: 800px) {\\n  .site-header__btn-container {\\n      float: right\\n  }\\n  }\\n.site-header__logo {\\n    position: absolute;\\n    top: 0;\\n    left: 50%;\\n    transform: translateX(-50%);\\n    transform-origin: 50% 0;\\n    transition: transform 0.3s ease-out;\\n    background-color: #2f5572;\\n    padding: 13px 23px;\\n  }\\n@media (min-width: 800px) {\\n  .site-header__logo {\\n      left: auto;\\n      transform: translateX(0);\\n      padding: 25px 35px\\n  }\\n      .site-header--dark .site-header__logo {\\n        transform: scale(0.55);\\n      }\\n  }\\n.site-header__menu-icon {\\n    z-index: 10;\\n    width: 20px;\\n    height: 19px;\\n    position: absolute;\\n    top: 10px;\\n    right: 20px;\\n  }\\n.site-header__menu-icon::before {\\n      content: \\\"\\\";\\n      position: absolute;\\n      top: 0px;\\n      left: 0%;\\n      width: 20px;\\n      height: 3px;\\n      background-color: white;\\n      transform-origin: 0 0;\\n      transition: transform 0.3s ease-out;\\n    }\\n.site-header__menu-icon__middle {\\n      position: absolute;\\n      top: 8px;\\n      left: 0;\\n      width: 20px;\\n      height: 3px;\\n      background-color: white;\\n      transition: all 0.3s ease-out;\\n      transform-origin: 0 50%;\\n    }\\n.site-header__menu-icon::after {\\n      content: \\\"\\\";\\n      position: absolute;\\n      bottom: 0;\\n      left: 0;\\n      width: 20px;\\n      height: 3px;\\n      background-color: white;\\n      transform-origin: 0 100%;\\n      transition: transform 0.3s ease-out;\\n    }\\n@media (min-width: 530px) {\\n  .site-header__menu-icon {\\n      display: none\\n  }\\n  }\\n.site-header__menu-icon--close-x::before {\\n      transform: rotate(45deg) scaleX(1.25);\\n    }\\n.site-header__menu-icon--close-x .site-header__menu-icon__middle {\\n      opacity: 0;\\n      transform: scaleX(0);\\n    }\\n.site-header__menu-icon--close-x::after {\\n      transform: rotate(-45deg) scaleX(1.25) translateY(1px);\\n    }\\n.site-header__menu-content {\\n    opacity: 0;\\n    transform: scale(1.2);\\n    transition: all 0.3s ease-out;\\n    position: relative;\\n    z-index: -10;\\n    padding-top: 90px;\\n    text-align: center;\\n  }\\n@media (min-width: 800px) {\\n  .site-header__menu-content {\\n      display: block;\\n      z-index: 1;\\n      padding-top: 0;\\n      transform: scale(1)\\n  }\\n  }\\n.site-header__menu-content--is-visible {\\n      opacity: 1;\\n      z-index: 1;\\n      transform: scale(1);\\n    }\\n.primary-nav {\\n  padding-top: 10px;\\n}\\n@media (min-width: 800px) {\\n.primary-nav {\\n    padding-top: 0\\n}\\n  }\\n@media (min-width: 800px) {\\n  .primary-nav--pull-right {\\n      float: right\\n  }\\n  }\\n.primary-nav ul {\\n    margin: 0;\\n    padding: 0;\\n  }\\n.primary-nav ul::after {\\n    content: \\\" \\\";\\n    clear: both;\\n    display: table;\\n  }\\n.primary-nav li {\\n    list-style: none;\\n    display: inline-block;\\n    padding-right: 20px;\\n  }\\n@media (min-width: 800px) {\\n  .primary-nav li {\\n      float: left;\\n      display: block\\n  }\\n  }\\n.primary-nav li:last-child {\\n    padding-right: 0;\\n  }\\n@media (min-width: 800px) {\\n  .primary-nav li:last-child {\\n      padding-right: 20px\\n  }\\n  }\\n.primary-nav a {\\n    color: #fff;\\n    text-decoration: none;\\n    font-weight: 300;\\n    display: block;\\n    padding: 5px 8px;\\n    font-size: 0.8rem;\\n    background-color: rgba(#2f5572, 0.5);\\n  }\\n@media (min-width: 800px) {\\n  .primary-nav a {\\n      font-size: 1rem;\\n      padding: 12px 0;\\n      background-color: transparent\\n  }\\n      .primary-nav a.is-current-link {\\n        color: #fabb69;\\n      }\\n  }\\n.reveal-item {\\n  opacity: 0;\\n  transform: scale(1.2);\\n  transition: opacity 1.5s ease-out, transform 1s ease-out;\\n}\\n.reveal-item--is-visible {\\n    opacity: 1;\\n    transform: scale(1);\\n  }\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://platinum-travel-site-files/./app/assets/styles/styles.css?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet%5B1%5D.rules%5B0%5D.use%5B2%5D");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"html {\\n  scroll-behavior: smooth;\\n}\\nbody {\\n  font-family: \\\"Roboto\\\", sans-serif;\\n  color: #333;\\n}\\nimg {\\n  max-width: 100%;\\n  margin: auto;\\n}\\n* {\\n  box-sizing: border-box;\\n}\\na {\\n  color: #d59541;\\n}\\n.large-hero {\\n  border-bottom: 10px solid #2f5572;\\n  position: relative;\\n}\\n.large-hero__image {\\n    display: block;\\n  }\\n.large-hero__text-content {\\n    position: absolute;\\n    top: 50%;\\n    transform: translateY(-50%);\\n    left: 0;\\n    width: 100%;\\n    text-align: center;\\n  }\\n.large-hero__title {\\n    padding-top: 60px;\\n    font-weight: 300;\\n    color: #2f5572;\\n    margin: 0;\\n    font-size: 2rem;\\n  }\\n@media (min-width: 530px) {\\n  .large-hero__title {\\n      font-size: 4.5rem\\n  }\\n  }\\n.large-hero__subtitle {\\n    font-weight: 300;\\n    color: #2f5572;\\n\\n    margin: 0;\\n    font-size: 1.1rem;\\n  }\\n@media (min-width: 530px) {\\n  }\\n.large-hero__description {\\n    color: white;\\n    font-size: 1.1rem;\\n    font-weight: 100;\\n    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);\\n    max-width: 30rem;\\n    margin: auto;\\n    margin-right: auto;\\n  }\\n@media (min-width: 530px) {\\n  .large-hero__description {\\n      font-size: 1.8rem\\n  }\\n  }\\n.btn {\\n  background-color: #2f5572;\\n  color: white;\\n  text-decoration: none;\\n  padding: 0.75rem 1.2rem;\\n  display: inline-block;\\n}\\n.btn--orange {\\n    background-color: #d59541;\\n  }\\n.btn--large {\\n    padding: 1.1rem 1.9rem;\\n  }\\n@media (min-width: 530px) {\\n  .btn--large {\\n      font-size: 1.25rem\\n  }\\n  }\\n.page-section {\\n  padding: 0.5rem 0;\\n}\\n@media (min-width: 800px) {\\n.page-section {\\n    padding: 4.5rem 0\\n}\\n  }\\n.page-section--blue {\\n    background-color: #2f5572;\\n    color: #fff;\\n  }\\n.page-section--testimonial {\\n    background-color: #e0e6ef;\\n  }\\n@media (min-width: 1010px) {\\n  .page-section--testimonial {\\n      background: url(\\\"//assets/images/testimonials-bg.jpg\\\") no-repeat top\\n        center/cover\\n  }\\n  }\\n.wrapped {\\n  overflow: hidden;\\n  padding-left: 18px;\\n  padding-right: 18px;\\n  max-width: 1236px;\\n  margin-left: auto;\\n  margin-right: auto;\\n}\\n.wrapped--medium {\\n    max-width: 976px;\\n  }\\n.wrapped--narrow {\\n    max-width: 500x;\\n  }\\n.wrapped--no-padding-until-meduim {\\n    padding-left: 0;\\n    padding-right: 0;\\n  }\\n@media (min-width: 800px) {\\n\\n  .wrapped--no-padding-until-meduim {\\n      padding-left: 18px;\\n      padding-right: 18px\\n  }\\n  }\\n.wrapped--no-padding-until-large {\\n    padding-left: 0;\\n    padding-right: 0;\\n  }\\n@media (min-width: 1010px) {\\n  .wrapped--no-padding-until-large {\\n      padding-left: 18px;\\n      padding-right: 18px\\n  }\\n  }\\n.wrapped .wrapped {\\n    padding-left: 0;\\n    padding-right: 0;\\n  }\\n.wrapped--b-margin {\\n    margin-bottom: 1rem;\\n  }\\n@media (min-width: 530px) {\\n  .wrapped--b-margin {\\n      margin-bottom: 4rem\\n  }\\n  }\\n.headline {\\n  font-weight: 300;\\n  font-size: 1.7rem;\\n  color: #2f5572;\\n}\\n@media (min-width: 530px) {\\n.headline {\\n    font-size: 2.875rem\\n}\\n  }\\n.headline--center {\\n    text-align: center;\\n  }\\n.headline--orange {\\n    color: #d59541;\\n  }\\n.headline--small {\\n    font-size: 1.1rem;\\n  }\\n@media (min-width: 530px) {\\n  .headline--small {\\n      font-size: 1.875rem\\n  }\\n  }\\n.headline--narrow {\\n    max-width: 500px;\\n    margin-left: auto;\\n    margin-right: auto;\\n  }\\n.headline--light {\\n    font-weight: 100;\\n  }\\n.headline--b-margin-small {\\n    margin-bottom: 0.5em;\\n  }\\n.headline--b-margin-large {\\n    margin-bottom: 1.6em;\\n  }\\n.headline--no-t-margin {\\n    margin-top: auto;\\n  }\\n.row::after {\\n    content: \\\" \\\";\\n    clear: both;\\n    display: table;\\n  }\\n.row--t-padding {\\n    padding-top: 80px;\\n  }\\n.row--gutters {\\n    margin-right: -65px;\\n  }\\n.row--gutters > div {\\n    padding-right: 65px;\\n  }\\n.row--gutters-small {\\n    margin-right: -45px;\\n  }\\n.row--gutters-small > div {\\n    padding-right: 45px;\\n  }\\n.row--gutters-larges {\\n    margin-right: -120px;\\n  }\\n.row--gutters-larges > div {\\n    padding-right: 120px;\\n  }\\n.row__b-margin-until-meduim {\\n    margin-bottom: 1rem;\\n  }\\n@media (min-width: 800px) {\\n    .row__b-margin-until-meduim {\\n      margin-bottom: 0;\\n    }\\n    .row__meduim-4 {\\n      float: left;\\n      width: 33.33%;\\n    }\\n\\n    .row__meduim-4--lager {\\n      width: 37%;\\n    }\\n    .row__meduim-6 {\\n      float: left;\\n      width: 50%;\\n    }\\n\\n    .row__meduim-8 {\\n      float: left;\\n      width: 66.66%;\\n    }\\n    .row__meduim-8--smaller {\\n      width: 63%;\\n    }\\n  }\\n@media (min-width: 1010px) {\\n    .row__b-margin-until-large {\\n      margin-bottom: 0;\\n    }\\n    .row__large-4 {\\n      float: left;\\n      width: 33.33%;\\n    }\\n\\n    .row__large-4--lager {\\n      width: 37%;\\n    }\\n    .row__large-6 {\\n      float: left;\\n      width: 50%;\\n    }\\n\\n    .row__large-8 {\\n      float: left;\\n      width: 66.66%;\\n    }\\n    .row__large-8--smaller {\\n      width: 63%;\\n    }\\n  }\\n@media (min-width: 800px) {\\n\\n  .row--equal-height-at-meduim {\\n      display: flex\\n  }\\n  }\\n.row--equal-height-at-meduim > div {\\n      float: none;\\n      display: flex;\\n    }\\n@media (min-width: 1010px) {\\n\\n  .row--equal-height-at-large {\\n      display: flex\\n  }\\n  }\\n.row--equal-height-at-large > div {\\n      float: none;\\n      display: flex;\\n    }\\n.generic-content-container p {\\n    line-height: 1.65;\\n    margin: 0 0 1.8rem 0;\\n    font-weight: 300;\\n  }\\n@media (min-width: 530px) {\\n  .generic-content-container p {\\n      font-size: 1.1rem\\n  }\\n  }\\n.generic-content-container p a {\\n    font-weight: 700;\\n  }\\n.section-title {\\n  font-size: 2rem;\\n  font-weight: 300;\\n  text-align: center;\\n}\\n@media (min-width: 530px) {\\n.section-title {\\n    font-size: 3.5rem\\n}\\n  }\\n.section-title strong {\\n    font-weight: 500;\\n  }\\n.section-title__icon {\\n    display: block;\\n    margin-left: auto;\\n    margin-right: auto;\\n    margin-bottom: 0.6rem;\\n  }\\n@media (min-width: 530px) {\\n  .section-title__icon {\\n      position: relative;\\n      top: 10px;\\n      margin-right: 1.5rem;\\n      margin-left: 0;\\n      margin-bottom: 0;\\n      display: inline-block\\n  }\\n  }\\n.section-title--blue {\\n    color: #2f5572;\\n  }\\n.section-title--less-margin {\\n    margin-bottom: 1.3rem;\\n    margin-top: 0;\\n  }\\n.feature-item {\\n  position: relative;\\n  padding-bottom: 2.5rem;\\n}\\n@media (min-width: 530px) {\\n.feature-item {\\n    padding-left: 95px\\n}\\n  }\\n.feature-item__icon {\\n    display: block;\\n    margin: auto;\\n  }\\n@media (min-width: 530px) {\\n  .feature-item__icon {\\n      position: absolute;\\n      left: 0\\n  }\\n  }\\n.feature-item__title {\\n    font-size: 1.6rem;\\n    font-weight: 300;\\n    margin-top: 0.8em;\\n    margin-bottom: 0.8rem;\\n    text-align: center;\\n  }\\n@media (min-width: 530px) {\\n  .feature-item__title {\\n      margin-top: 1em;\\n      font-size: 1.85rem;\\n      text-align: left\\n  }\\n  }\\n.testimonial {\\n  border-color: rgba(255, 255, 255, 0.8);\\n  padding: 0 1.875rem 1px 18px;\\n  margin-bottom: 90px;\\n}\\n@media (min-width: 1010px) {\\n.testimonial {\\n    margin-bottom: 0;\\n    padding: 0 1.875rem 1px 1.875rem\\n}\\n  }\\n.testimonial--last {\\n    margin-bottom: 0;\\n  }\\n.testimonial__photo {\\n    border-radius: 50%;\\n    overflow: hidden;\\n    width: 160px;\\n    height: 160px;\\n    margin: 0 auto -80px auto;\\n    position: relative;\\n    top: -80px;\\n    border: 6px solid rgba(255, 255, 255, 0.8);\\n  }\\n.testimonial__title {\\n    color: #2f5572;\\n    text-align: center;\\n    font-size: 1.5rem;\\n    font-weight: 500;\\n    margin: 0;\\n  }\\n.testimonial__subtitle {\\n    color: #d59541;\\n    text-align: center;\\n    font-weight: 400;\\n    font-size: 0.9rem;\\n    margin: 0.25rem 0 1rem 0;\\n  }\\n.site-footer {\\n  background-color: #2f5572;\\n  color: #fff;\\n  padding: 0.5rem;\\n  text-align: center;\\n}\\n.site-footer__text {\\n    display: block;\\n    margin-bottom: 1rem;\\n  }\\n@media (min-width: 800px) {\\n  .site-footer__text {\\n      display: inline;\\n      margin-bottom: 0;\\n      margin-right: 1.5rem;\\n      font-weight: 20\\n  }\\n  }\\n.site-header {\\n  padding: 10px 0;\\n  position: absolute;\\n  width: 100%;\\n  z-index: 2;\\n\\n  transition: background-color 0.3s ease-out;\\n}\\n.site-header--is-expanded {\\n    background-color: rgba(#2f5572, 0.55);\\n  }\\n@media (min-width: 800px) {\\n.site-header {\\n    position: fixed;\\n    background-color: rgba(\\\"#2f5572\\\", 0.3)\\n}\\n    .site-header--dark {\\n      background-color: rgba(23, 51, 72, 0.8);\\n    }\\n  }\\n@media (min-width: 800px) {\\n  .site-header__btn-container {\\n      float: right\\n  }\\n  }\\n.site-header__logo {\\n    position: absolute;\\n    top: 0;\\n    left: 50%;\\n    transform: translateX(-50%);\\n    transform-origin: 50% 0;\\n    transition: transform 0.3s ease-out;\\n    background-color: #2f5572;\\n    padding: 13px 23px;\\n  }\\n@media (min-width: 800px) {\\n  .site-header__logo {\\n      left: auto;\\n      transform: translateX(0);\\n      padding: 25px 35px\\n  }\\n      .site-header--dark .site-header__logo {\\n        transform: scale(0.55);\\n      }\\n  }\\n.site-header__menu-icon {\\n    z-index: 10;\\n    width: 20px;\\n    height: 19px;\\n    position: absolute;\\n    top: 10px;\\n    right: 20px;\\n  }\\n.site-header__menu-icon::before {\\n      content: \\\"\\\";\\n      position: absolute;\\n      top: 0px;\\n      left: 0%;\\n      width: 20px;\\n      height: 3px;\\n      background-color: white;\\n      transform-origin: 0 0;\\n      transition: transform 0.3s ease-out;\\n    }\\n.site-header__menu-icon__middle {\\n      position: absolute;\\n      top: 8px;\\n      left: 0;\\n      width: 20px;\\n      height: 3px;\\n      background-color: white;\\n      transition: all 0.3s ease-out;\\n      transform-origin: 0 50%;\\n    }\\n.site-header__menu-icon::after {\\n      content: \\\"\\\";\\n      position: absolute;\\n      bottom: 0;\\n      left: 0;\\n      width: 20px;\\n      height: 3px;\\n      background-color: white;\\n      transform-origin: 0 100%;\\n      transition: transform 0.3s ease-out;\\n    }\\n@media (min-width: 530px) {\\n  .site-header__menu-icon {\\n      display: none\\n  }\\n  }\\n.site-header__menu-icon--close-x::before {\\n      transform: rotate(45deg) scaleX(1.25);\\n    }\\n.site-header__menu-icon--close-x .site-header__menu-icon__middle {\\n      opacity: 0;\\n      transform: scaleX(0);\\n    }\\n.site-header__menu-icon--close-x::after {\\n      transform: rotate(-45deg) scaleX(1.25) translateY(1px);\\n    }\\n.site-header__menu-content {\\n    opacity: 0;\\n    transform: scale(1.2);\\n    transition: all 0.3s ease-out;\\n    position: relative;\\n    z-index: -10;\\n    padding-top: 90px;\\n    text-align: center;\\n  }\\n@media (min-width: 800px) {\\n  .site-header__menu-content {\\n      display: block;\\n      z-index: 1;\\n      padding-top: 0;\\n      transform: scale(1)\\n  }\\n  }\\n.site-header__menu-content--is-visible {\\n      opacity: 1;\\n      z-index: 1;\\n      transform: scale(1);\\n    }\\n.primary-nav {\\n  padding-top: 10px;\\n}\\n@media (min-width: 800px) {\\n.primary-nav {\\n    padding-top: 0\\n}\\n  }\\n@media (min-width: 800px) {\\n  .primary-nav--pull-right {\\n      float: right\\n  }\\n  }\\n.primary-nav ul {\\n    margin: 0;\\n    padding: 0;\\n  }\\n.primary-nav ul::after {\\n    content: \\\" \\\";\\n    clear: both;\\n    display: table;\\n  }\\n.primary-nav li {\\n    list-style: none;\\n    display: inline-block;\\n    padding-right: 20px;\\n  }\\n@media (min-width: 800px) {\\n  .primary-nav li {\\n      float: left;\\n      display: block\\n  }\\n  }\\n.primary-nav li:last-child {\\n    padding-right: 0;\\n  }\\n@media (min-width: 800px) {\\n  .primary-nav li:last-child {\\n      padding-right: 20px\\n  }\\n  }\\n.primary-nav a {\\n    color: #fff;\\n    text-decoration: none;\\n    font-weight: 300;\\n    display: block;\\n    padding: 5px 8px;\\n    font-size: 0.8rem;\\n    background-color: rgba(#2f5572, 0.5);\\n  }\\n@media (min-width: 800px) {\\n  .primary-nav a {\\n      font-size: 1rem;\\n      padding: 12px 0;\\n      background-color: transparent\\n  }\\n      .primary-nav a.is-current-link {\\n        color: #fabb69;\\n      }\\n  }\\n.reveal-item {\\n  opacity: 0;\\n  transform: scale(1.2);\\n  transition: opacity 1.5s ease-out, transform 1s ease-out;\\n}\\n.reveal-item--is-visible {\\n    opacity: 1;\\n    transform: scale(1);\\n  }\\n.modal {\\n    opacity: 0;\\n    visibility: hidden;\\n    transform: scale(1.2);\\n    transition: all 0.3s ease-out;\\n    position: fixed;\\n    top: 0;\\n    right: 0;\\n    bottom: 0;\\n    left: 0;\\n    background-color: rgba(255, 255, 255, 0.9);\\n    z-index: 5;\\n    display: flex;\\n      \\n}\\n.modal--is-visible {\\n        opacity: 1;\\n        visibility: visible;\\n        transform: scale(1);\\n    }\\n.modal__inner {\\n        flex: 1;\\n        margin: auto;\\n    }\\n.modal__description {\\n        text-align: center;\\n        font-size: 1.3rem;\\n        font-weight: 300;\\n        line-height: 1.65;\\n    }\\n.modal__close {\\n        position: absolute;\\n        top: 15px;\\n        right: 15px;\\n        font-size: 2rem;\\n\\n        transform: scaleX(1.3);\\n        transform-origin: 100% 0;\\n        color: #2f5572;\\n        cursor: pointer;\\n    }\\n.modal__close:hover {\\n            color: #d59541;\\n        }\\n.social-icons {\\n    text-align: center;\\n}\\n.social-icons__icon {\\n        background-color: #d59541;\\n        display: inline-block;\\n        width: 33%;\\n        height: 72px;\\n        margin: 0 5px 5px 5px;\\n        position: relative;\\n    }\\n@media (min-width: 530px) {\\n\\n\\n    .social-icons__icon {\\n            width: 72px\\n    }\\n  }\\n.social-icons__icon img {\\n            display: block;\\n            position: absolute;\\n            top: 50%;\\n            left: 50%;\\n            transform: translate(-50%, -50%);\\n        }\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://platinum-travel-site-files/./app/assets/styles/styles.css?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet%5B1%5D.rules%5B0%5D.use%5B2%5D");
 
 /***/ }),
 
@@ -265,6 +265,9 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -287,6 +290,28 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/ensure chunk */
+/******/ 	(() => {
+/******/ 		__webpack_require__.f = {};
+/******/ 		// This file contains only the entry chunk.
+/******/ 		// The chunk loading function for additional chunks
+/******/ 		__webpack_require__.e = (chunkId) => {
+/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
+/******/ 				__webpack_require__.f[key](chunkId, promises);
+/******/ 				return promises;
+/******/ 			}, []));
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get javascript chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference async chunks
+/******/ 		__webpack_require__.u = (chunkId) => {
+/******/ 			// return url for filenames based on template
+/******/ 			return "" + chunkId + ".bundles.js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -322,6 +347,52 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/load script */
+/******/ 	(() => {
+/******/ 		var inProgress = {};
+/******/ 		var dataWebpackPrefix = "platinum-travel-site-files:";
+/******/ 		// loadScript function to load a script via script tag
+/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
+/******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
+/******/ 			var script, needAttach;
+/******/ 			if(key !== undefined) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				for(var i = 0; i < scripts.length; i++) {
+/******/ 					var s = scripts[i];
+/******/ 					if(s.getAttribute("src") == url || s.getAttribute("data-webpack") == dataWebpackPrefix + key) { script = s; break; }
+/******/ 				}
+/******/ 			}
+/******/ 			if(!script) {
+/******/ 				needAttach = true;
+/******/ 				script = document.createElement('script');
+/******/ 		
+/******/ 				script.charset = 'utf-8';
+/******/ 				script.timeout = 120;
+/******/ 				if (__webpack_require__.nc) {
+/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
+/******/ 				}
+/******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
+/******/ 				script.src = url;
+/******/ 			}
+/******/ 			inProgress[url] = [done];
+/******/ 			var onScriptComplete = (prev, event) => {
+/******/ 				// avoid mem leaks in IE.
+/******/ 				script.onerror = script.onload = null;
+/******/ 				clearTimeout(timeout);
+/******/ 				var doneFns = inProgress[url];
+/******/ 				delete inProgress[url];
+/******/ 				script.parentNode && script.parentNode.removeChild(script);
+/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
+/******/ 				if(prev) return prev(event);
+/******/ 			}
+/******/ 			;
+/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
+/******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
+/******/ 			script.onload = onScriptComplete.bind(null, script.onload);
+/******/ 			needAttach && document.head.appendChild(script);
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -340,6 +411,122 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// Promise = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		
+/******/ 		__webpack_require__.f.j = (chunkId, promises) => {
+/******/ 				// JSONP chunk loading for javascript
+/******/ 				var installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
+/******/ 				if(installedChunkData !== 0) { // 0 means "already installed".
+/******/ 		
+/******/ 					// a Promise means "currently loading".
+/******/ 					if(installedChunkData) {
+/******/ 						promises.push(installedChunkData[2]);
+/******/ 					} else {
+/******/ 						if(true) { // all chunks have JS
+/******/ 							// setup Promise in chunk cache
+/******/ 							var promise = new Promise((resolve, reject) => {
+/******/ 								installedChunkData = installedChunks[chunkId] = [resolve, reject];
+/******/ 							});
+/******/ 							promises.push(installedChunkData[2] = promise);
+/******/ 		
+/******/ 							// start chunk loading
+/******/ 							var url = __webpack_require__.p + __webpack_require__.u(chunkId);
+/******/ 							// create error before stack unwound to get useful stacktrace later
+/******/ 							var error = new Error();
+/******/ 							var loadingEnded = (event) => {
+/******/ 								if(__webpack_require__.o(installedChunks, chunkId)) {
+/******/ 									installedChunkData = installedChunks[chunkId];
+/******/ 									if(installedChunkData !== 0) installedChunks[chunkId] = undefined;
+/******/ 									if(installedChunkData) {
+/******/ 										var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 										var realSrc = event && event.target && event.target.src;
+/******/ 										error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 										error.name = 'ChunkLoadError';
+/******/ 										error.type = errorType;
+/******/ 										error.request = realSrc;
+/******/ 										installedChunkData[1](error);
+/******/ 									}
+/******/ 								}
+/******/ 							};
+/******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
+/******/ 						} else installedChunks[chunkId] = 0;
+/******/ 					}
+/******/ 				}
+/******/ 		};
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no deferred startup
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0, resolves = [];
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					resolves.push(installedChunks[chunkId][0]);
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			for(moduleId in moreModules) {
+/******/ 				if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 					__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 				}
+/******/ 			}
+/******/ 			if(runtime) runtime(__webpack_require__);
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			while(resolves.length) {
+/******/ 				resolves.shift()();
+/******/ 			}
+/******/ 		
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunkplatinum_travel_site_files"] = self["webpackChunkplatinum_travel_site_files"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 		
+/******/ 		// no deferred startup
 /******/ 	})();
 /******/ 	
 /************************************************************************/
