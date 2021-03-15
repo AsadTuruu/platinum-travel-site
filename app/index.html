@@ -79,8 +79,8 @@
         <h3 class="headline headline--center headline--orange headline--small headline--narrow headline--b-margin-large">Одоо бид <strong>бусдын аяллыг</strong>  дурсамжтай болгохыг зорьж байна.</h3>
         <div class="wrapped wrapped--medium wrapped--b-margin">
 
-          <img 
-          sizes="(min-width:976px) 976px,100vw"
+          <img  class="lazyload"
+          data-sizes="(min-width:976px) 976px,100vw"
             srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 952w"
             alt="Couple walking down a street."
           />
@@ -90,18 +90,18 @@
             <picture>
               <source  
               sizes="404px" 
-              srcset="assets/images/our-start.jpg 404w,assets/images/our-start-hi-dpi.jpg 808w" 
+              data-srcset="assets/images/our-start.jpg 404w,assets/images/our-start-hi-dpi.jpg 808w" 
               media="(min-width:800px)" >
               <source 
               sizes="316px" 
-              srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w" 
+              data-srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w" 
               media="(min-width:1020px)">
               <source 
               srcset="assets/images/our-start.jpg" 
               media="(min-width:800px)">
                 
-              <img 
-              srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" 
+              <img class="lazyload"
+              data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" 
               alt="our founder"> 
             </picture>
           </div>
@@ -207,8 +207,8 @@
       <div class="testimonial">
 <div class="testimonial__photo">
 
-  <img sizes="160px"
-  srcset="assets/images/testimonial-jane.jpg 160w,assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe"/>
+  <img class="lazyload" sizes="160px"
+  data-srcset="assets/images/testimonial-jane.jpg 160w,assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe"/>
 </div>
         <h3 class="testimonial__title" >Батчимэг</h3>
         <h4 class="testimonial__subtitle">9 удаагийн аялагч</h4> 
@@ -226,8 +226,8 @@
 <div class="testimonial">
 
   <div class="testimonial__photo">
-      <img  sizes="160px" 
-      srcset="assets/images/testimonial-john.jpg 160w ,assets/images/testimonial-john-hi-dpi.jpg 320w" />
+      <img  class="lazyload" sizes="160px" 
+      data-srcset="assets/images/testimonial-john.jpg 160w ,assets/images/testimonial-john-hi-dpi.jpg 320w" />
   </div>
   <h3 class="testimonial__title">Дэлгэрбаяр</h3>
   <h4 class="testimonial__subtitle">4 удаагийн аялагч</h4>
